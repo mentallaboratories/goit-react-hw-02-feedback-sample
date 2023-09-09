@@ -1,0 +1,97 @@
+.notif {
+  color: red;
+  text-shadow: 1px 1px 2px rgb(106, 106, 106);
+}
+
+/* акцент */
+
+.accent {
+  color: maroon;
+  border: 1px dotted maroon;
+  background-color: lightsalmon;
+  border-radius: 3px;
+  fill: maroon;
+}
+
+/* виділений елемент */
+.current {
+  color: darkgreen;
+  border-radius: 3px;
+  border: 1px solid darkgreen;
+  background-color: greenyellow;
+  fill: darkgreen;
+}
+
+
+.roadmap{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-size: cover;
+  
+    border: 0;
+    background-image: url('../../img/map-bg-orig.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+
+.milestone {
+  display: inline-block;
+  width: 100%px;
+  height: 148px;
+
+  border: 0;
+/* 
+  background-color: blue;
+  background-image: url('../../icons/icon-upgrade.svg');
+   */
+  background-blend-mode:lighten;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+
+}
+
+.step {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+
+  border: 0;
+  background-image: url('../../icons/steps.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+
+.stepInput{
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+
+  border: 0;
+  background-image: url('../../icons/input.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  opacity: 0.6;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  outline: none;
+}
+.searchFormButton:hover {
+  opacity: 1;
+}
+
+

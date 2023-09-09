@@ -1,0 +1,16 @@
+.itTip{
+    font-family: 'IBM Plex Mono', monospace;
+    color: darkgreen;
+    background-color: rgb(10, 183, 59);
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: auto;
+    border: 1px solid darkgreen;
+    border-radius: 3px;
+    padding: 3px;
+
+    fill: white;
+  }

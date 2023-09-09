@@ -3,8 +3,12 @@ import css from './FeedbackOptions.module.css'; // стилізація
 
 // Компонент який рендерить кнопки для кожного з можливих типів відгуків
 export const FeedbackOptions = ({ onLeavefeedback, options }) => {
+  //Повертає
   return (
+    
+  // контейнер, клас CSS "Обгортка", з імпортованого ./FeedbackOptions.module.css
     <div className={css.wrap}>
+      
       {/* Генеруємо список кнопок на основі масиву options */}
       {options.map((name, i) => {
         return (

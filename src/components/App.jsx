@@ -3,7 +3,16 @@ import { Section } from './Section/Section';
 import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 import { Statistics } from './Statistics/Statistics';
 import { Notification } from './Notification/Notification';
+import { Roadmap } from './Roadmap/Roadmap';
+
+import { ItTip } from './ItTip/ItTip';
+
+
+
+
 import css from './App.module.css';
+
+// Експортуємо клас Застосунок , що розширює (об'єкт)Компонент
 
 export class App extends Component {
   state = {
@@ -43,7 +52,16 @@ export class App extends Component {
 
   render() {
     return (
+
+      
       <div className={css.container}>
+        <Section title="Proposition">
+          <ItTip message="This is a paragraph"/>
+       <p> Пропоную Вам долучитися до розробки сайту <strong>SkoolTimez</strong>, 
+        Він містить readme файлів шкільних проєктів які дають бали з різних предметів. 
+        Крім того ми залучимо дітей у якості інтернів і оформимо проект як наукову МАН роботу з інформатики по <code>HTML, CSS, JS, React.</code> 
+        Це допоможе Вам добре стартонути в якості вчителя.</p>
+      </Section>
         <Section title="Please Leave feedback">
           <FeedbackOptions
 
@@ -60,7 +78,7 @@ export class App extends Component {
         <Section title="Statistics">
           {/* Рендер за умовою */}
           {this.countTotalFeedback() === 0 ? (
-            <Notification message="There is no feedback yet..." />
+            <Notification message="There are no statistics..." />
           ) : (
             <Statistics
 
@@ -77,6 +95,11 @@ export class App extends Component {
               positivePercentage={this.countPositiveFeedbackPercentage}
             />
           )}
+        </Section>
+
+        <Section title="Roadmap">
+        <Roadmap message="Follow the steps...">
+          </Roadmap>
         </Section>
       </div>
     );
